@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Gantari &display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+html {
+    font-family: 'Gantari', sans-serif;
+}
+
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Dark Theme */
+.dark {
+    background: #181825;
+    transition: all 0.5s ease-in-out;
+}
+
+.toggleBTN {
+    background: url(assets/lightMode.png);
+    background-size: 30px;
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    top: 20px;
+    right: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 2s ease-out;
+}
+
+.container {
+    background-color: #313244;
+    width: 40%;
+    min-width: 500px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 20px 0 50px;
+    border-radius: 15px;
+    transition: all 0.5s ease-out;
+}
+
+.showTimer {
+    position: relative;
+    width: 92%;
+    background: #313244;
+    left: 4%;
+    padding: 40px 0;
+    font-family: 'Ubuntu Mono', monospace;
+    color: #cdd6f4;
+    font-size: 50px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #1e1e2e;
+    transition: all 0.5s ease-out;
+}
+
+.controlButtons {
+    width: 90%;
+    margin: 60px auto 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.controlButtons button {
+    width: 120px;
+    height: 45px;
+    color: #45475a;
+    border: none;
+    font-family: 'Gantari', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    outline: none;
+}
+/* End Dark Theme */
+
+/* Light Theme */
+.light {
+    background-color: #bcc0cc;
+    transition: all 0.5s ease-out;
+}
+
+.light .toggleBTN {
+    background: url(assets/darkMode.png);
+    background-size: 30px;
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    top: 20px;
+    right: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 2s ease-out;
+}
+
+.light .container {
+    background-color: #e6e9ef;
+    width: 40%;
+    min-width: 500px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 20px 0 50px;
+    border-radius: 15px;
+    transition: 0.5s ease-out;
+}
+
+.light .showTimer {
+    position: relative;
+    width: 92%;
+    background: #dce0e8;
+    left: 4%;
+    padding: 40px 0;
+    font-family: 'Ubuntu Mono', monospace;
+    color: #4c4f69;
+    font-size: 50px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #acb0be;
+    transition: 0.5s ease-out;
+}
+
+.light .controlButtons button {
+    width: 120px;
+    height: 45px;
+    color: #5c5f77;
+    border: none;
+    font-family: 'Gantari', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    outline: none;
+}
+/* End Light Theme */
+
+/* Button Styles */
+#startButton {
+    background-color: #7ae670;
+    transition: 0.1s ease-in;
+}
+
+#startButton:hover {
+    background-color: #a6e3a1;
+    transition: 0.1s ease-in;
+}
+
+#resetButton {
+    background-color: #f4507e;
+    transition: 0.1s ease-in;
+}
+
+#resetButton:hover {
+    background-color: #f38ba8;
+    transition: 0.1s ease-in;
+}
+
+#pauseButton {
+    background-color: #38b1e9;
+    transition: 0.1s ease-in;
+}
+
+#pauseButton:hover {
+    background-color: #74c7ec;
+    transition: 0.1s ease-in;
+}
+/* End Button Styles */
